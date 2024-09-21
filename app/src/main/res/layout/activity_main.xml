@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="false">
+
+    <!-- Local Video View (Full Screen) -->
+    <FrameLayout
+        android:id="@+id/local_video_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" />
+
+    <!-- Remote Video View (Small Floating Window) -->
+    <FrameLayout
+        android:id="@+id/remote_video_view_container"
+        android:layout_width="85dp"
+        android:layout_height="150dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@android:color/darker_gray" />
+
+</FrameLayout>
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<FrameLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@android:color/white"-->
+<!--    android:fitsSystemWindows="false"> &lt;!&ndash; Ensures it ignores the system windows like status bar &ndash;&gt;-->
+
+<!--    &lt;!&ndash; Local Video View (Full Screen) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/local_video_view_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@android:color/white" />-->
+
+<!--    &lt;!&ndash; Remote Video View (Small Floating Window) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/remote_video_view_container"-->
+<!--        android:layout_width="85dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_gravity="top|end"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:backgroundTint="@android:color/darker_gray" />-->
+
+<!--</FrameLayout>-->
+
+
+
+
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<FrameLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:backgroundTint="@color/white"-->
+<!--    android:background="@android:color/white">-->
+
+<!--    &lt;!&ndash; Local Video View (Full Screen) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/local_video_view_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@android:color/white" />-->
+
+<!--    &lt;!&ndash; Remote Video View (Small Floating Window) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/remote_video_view_container"-->
+<!--        android:layout_width="85dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_gravity="top|end"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:backgroundTint="@android:color/darker_gray" />-->
+
+<!--</FrameLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:backgroundTint="@color/white"-->
+<!--    android:background="@android:color/white">-->
+
+<!--    &lt;!&ndash; Local Video View (Full Screen) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/local_video_view_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@android:color/white" />-->
+
+<!--    &lt;!&ndash; Remote Video View (Small Floating Window) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/remote_video_view_container"-->
+<!--        android:layout_width="85dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_gravity="top|end"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:backgroundTint="@android:color/darker_gray" />-->
+
+<!--</FrameLayout>-->
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    &lt;!&ndash; Local Video View (Full Screen) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/local_video_view_container"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:background="@android:color/white"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    &lt;!&ndash; Remote Video View (Small Floating Window) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/remote_video_view_container"-->
+<!--        android:layout_width="85dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginBottom="0dp" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    &lt;!&ndash; Local Video View (Full Screen) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/local_video_view_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@android:color/white"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    &lt;!&ndash; Remote Video View (Small Floating Window) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/remote_video_view_container"-->
+<!--        android:layout_width="85dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginBottom="0dp" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    &lt;!&ndash; Local Video View (Full Screen) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/local_video_view_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:background="@android:color/white"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    &lt;!&ndash; Remote Video View (Small Floating Window) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/remote_video_view_container"-->
+<!--        android:layout_width="85dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/local_video_view_container"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginBottom="8dp" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    &lt;!&ndash; Local Video View (Full Screen) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/local_video_view_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:background="@android:color/white"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    &lt;!&ndash; Remote Video View (Small Floating Window) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/remote_video_view_container"-->
+<!--        android:layout_width="85dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginBottom="8dp" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/white"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    &lt;!&ndash; Local Video View (Full Screen) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/local_video_view_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:background="@android:color/white"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    &lt;!&ndash; Remote Video View (Small Floating Window) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/remote_video_view_container"-->
+<!--        android:layout_width="85dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginBottom="8dp" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:backgroundTint="@color/white"-->
+<!--    android:background="@color/white"-->
+<!--    app:layout_constraintTop_toTopOf="parent"-->
+<!--    tools:context=".MainActivity">-->
+
+
+<!--    &lt;!&ndash; Local Video View (Full Screen) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/local_video_view_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@android:color/white"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    &lt;!&ndash; Remote Video View (Small Floating Window) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/remote_video_view_container"-->
+<!--        android:layout_width="85dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_margin="16dp" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Start Video Call!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/local_video_view_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@android:color/white" />-->
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/remote_video_view_container"-->
+<!--        android:layout_width="160dp"-->
+<!--        android:layout_height="160dp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="@android:color/darker_gray"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    &lt;!&ndash; Remote Video View (Fullscreen) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/remote_video_view_container"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_margin="0dp"-->
+<!--        android:background="@android:color/black"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    &lt;!&ndash; Local Video View (Small Window) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/local_video_view_container"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:layout_height="160dp"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:background="@android:color/darker_gray"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/button_bar"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--        &lt;!&ndash; Switch Camera Button &ndash;&gt;-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_switch_camera"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:src="@drawable/switch_camera"-->
+<!--            android:contentDescription="Switch Camera" />-->
+
+<!--        &lt;!&ndash; Mute Button &ndash;&gt;-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_mute"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:src="@drawable/microphone"-->
+<!--            android:contentDescription="Mute" />-->
+
+<!--        &lt;!&ndash; End Call Button &ndash;&gt;-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_end_call"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:src="@drawable/phone_call_end"-->
+<!--            android:contentDescription="End Call"-->
+<!--            app:tint="@color/red" />-->
+
+<!--    </LinearLayout>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    &lt;!&ndash; Toolbar (ActionBar with Title) &ndash;&gt;-->
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="?attr/colorPrimary"-->
+<!--        android:title="Video Call"-->
+<!--        android:titleTextColor="@android:color/white"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--         />-->
+
+<!--    &lt;!&ndash; Remote Video View (Fullscreen) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/remote_video_view_container"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_margin="0dp"-->
+<!--        android:background="@android:color/black"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/toolbar"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    &lt;!&ndash; Local Video View (Small Window) &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/local_video_view_container"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:layout_height="160dp"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:background="@android:color/darker_gray"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+    <!-- Button Bar (Camera Switch, Mute, End Call) -->
+    <!-- Uncomment below if needed -->
+    <!--
+    <LinearLayout
+        android:id="@+id/button_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_switch_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/switch_camera"
+            android:contentDescription="Switch Camera" />
+
+        <ImageButton
+            android:id="@+id/btn_mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/microphone"
+            android:contentDescription="Mute" />
+
+        <ImageButton
+            android:id="@+id/btn_end_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/phone_call_end"
+            android:contentDescription="End Call"
+            app:tint="@color/red" />
+    </LinearLayout>
+    -->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+
+
+
+
+
+
